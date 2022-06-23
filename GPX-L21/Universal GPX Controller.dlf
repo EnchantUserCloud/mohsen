@@ -1,0 +1,53 @@
+Define GPX={
+    Do Check-If (GPX=true) {
+        Do For-If (set GPX=false; set IsGPXactive=false) {
+            set IsGPXactive=true
+            break > LoopKiller.dll
+        }
+        set /N GPX69=Error69
+        Ask "Do For-If" {
+            int IsHostWinNT
+            get (IsHostWinNT) save IsHostWinNT
+            line break > LoopKiller.dll
+        }
+        set IsLibrary=true
+        bool IsLibrary=false(If IsHostWinNT=false)
+        echo /Host Saved.
+        GO {
+            continue /f {
+                library.request.SysWOW64 > blob F1
+                get ::F1:: info save GPX69
+            }
+            library.request.getData.apply(//Local.Server//) > blob F2
+            get ::F2::: Do Nothing\...
+            $BlobClassPath = Open "script" %%Blob
+            $LibraryCrossFire
+            $Antisure.get()
+            server.prepare.ofx(OFX-76)
+        }
+    }
+}
+Define No-GPX={
+    Do Check-If (GPX=false) {
+            echo /Host "Saving Failed: Internal Server Issue x58"
+            blob F3 > Nothing\...
+            set HostRN="Host Failed to Run"
+            set HostFN="Host is Running"
+            set localhost="192.168.1.1"
+            set FLX=$BlobClassPath
+            
+    }
+}
+Define EQ={
+    get HostFN -if -$A=%added-by-OS {
+        #RID OF HostFN $KillProccess
+        $sRTX = "Fat-man-doin-its-job" /-$KillProcess
+        $bRTX = "Long-man-doin-its-job" /-$BornProcess
+    }
+}
+
+// Written by MohsenEMX
+// All rights reserved.
+// This is a script that can only be used with MohsenEMX's projects.
+// Kind of a code library.
+// Unknown Languege Written by MohsenEMX, Only for library projects.
